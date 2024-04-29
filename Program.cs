@@ -9,7 +9,7 @@ try
     {
         sw.WriteLine(sms);
     }
-    using (StreamReader sr = new StreamReader(path, true))
+    using (StreamReader sr = new StreamReader(path))
     {
         string copy = sr.ReadLine();
         while (copy != null)
