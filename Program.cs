@@ -3,13 +3,11 @@ try
 {
     string path = "/Users/artyom/Desktop/csharp/firstfile.txt";
     string path2 = "/Users/artyom/Desktop/csharp/secondfile.txt";
-    string sms = "bla-bla";
+    string sms = "first line\nthe second line\nlast line";
 
     using (StreamWriter sw = new StreamWriter(path))
     {
         sw.WriteLine(sms);
-        sw.WriteLine("2RD");
-        sw.WriteLine("3ed");
     }
     using (StreamReader sr = new StreamReader(path, true))
     {
